@@ -49,7 +49,7 @@ main{
 /*Estilos para el mensaje*/
 .mensaje{
     background: white; /*color de fondo*/
-    background-image: url(Imagenes/Muneco.png); /*imagen de fondo*/
+    background-image: url(./Imagenes/Muneco.png); /*imagen de fondo*/
     background-repeat: no-repeat; /*para que no se repita el fondo*/
     background-position: center 30%; /*centrear la imagen de fondo*/
     border: none; /*quitar el borde*/
