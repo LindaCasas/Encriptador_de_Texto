@@ -1,0 +1,307 @@
+/*Estilos para toda la página*/
+*{
+    background: #F3F5FC; /*color de fondo de la pagina*/
+    font-family: 'Inter'; /*fuente de la letra*/
+    font-weight: 400; /*grosor de cada letra*/
+    font-size: 32px; /*tamaño de la letra*/
+    line-height: 100%;/*distancia entre líneas de texto*/
+}
+/*Estilos para el logo*/
+.logo{
+    padding-top: 20px; /*espacio interno hacia arriba*/
+    margin-left: 10px; /*margen izquierdo*/
+    width: 10%; /*tamaño*/
+}
+/*Estilos para el body-main*/
+main{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Estilos para la primera seccion del body-main*/
+.seccion1{
+    margin-left: 50px;
+}
+/*Estilos para el campo de texto*/
+.text-area{
+    border: none; /*quitar el borde*/
+    color: #0A3871; /*poner color a la letra*/
+    margin: 50px 0 40px;
+    padding: 0 0 30px;
+    text-transform: lowercase; /*transformar texto a minuscula*/
+    resize: none; /*evitar que el text-area cambie de tamaño*/
+}
+::placeholder{
+    color: #0A3871; /*poner color al texto provisional*/
+}
+.text-area:focus{
+    outline: none; /*para quitar el foco del campo de texto*/
+}
+/*Estilos para la informacion*/
+.logo-informacion{
+    height: 12px;
+    width: 12px;
+}
+.informacion{
+    color: #495057; /*color de texto*/
+    font-size: 16px; /*tamaño de la letra*/
+}
+/*Estilos para el mensaje*/
+.mensaje{
+    background: white; /*color de fondo*/
+    background-image: url(Imagenes/Muneco.png); /*imagen de fondo*/
+    background-repeat: no-repeat; /*para que no se repita el fondo*/
+    background-position: center 30%; /*centrear la imagen de fondo*/
+    border: none; /*quitar el borde*/
+    border-radius: 24px; /*redondear los bordes*/
+    color: #0A3871; /*color de la letra*/
+    margin-top: -50px;
+    width: 350px;
+    height: 540px;
+    padding: 25px;
+    position: flex;
+    resize: none; /*evitar que cambie de tamaño*/
+}
+.mensaje:focus{
+    outline:none;
+}
+.texto-mensaje{
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-top: -570px;
+    width: 350px;
+    height: 470px;
+    padding: 0 25px;
+    position: absolute;
+    resize: none;
+    display: none;
+}
+.texto-mensaje:focus{
+    outline:none;
+}
+/*Estilos para el texto encima del mensaje*/
+#contenido{
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 70px;
+    top: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #343A40; /*color del texto*/
+    line-height: 100%; /*espacio entre lineas de texto*/
+    background: white; /*color de fondo del texto*/
+}
+#contenido1{
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 70px;
+    top: 480px;
+    font-style: normal;
+    font-size: 20px; 
+    color: #343A40;
+    line-height: 90%;
+    background: white;
+}
+/*Estilos para los botones Encriptar-Desencriptar*/
+.botones{
+    display: flex;
+}
+.btn-encriptar{
+    background-color: #0A3871; /*color de fondo*/
+    border: 1px solid #0A3871; /*estilo del borde*/
+    border-radius: 24px; /*redondear los bordes*/
+    color: white; /*color de la letra*/
+    cursor: pointer; /*poner el cursor de mano*/
+    height: 67px;
+    width: 280px;
+}
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer; 
+    height: 67px; 
+    width: 280px; 
+    margin-left: 30px;
+}
+/*Estilos para el boton Copiar*/
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px; 
+    width: 280px;
+    margin: 75px 65px;
+    top: 470px;
+    position: absolute;
+    display: none;
+}
+/*Estilos para el pie de página*/
+footer{
+    text-align: right; /*alinear texto a la derecha*/
+    margin: 10px 155px 0 0;
+    font-size: 15px; /*tamaño de la letra*/
+    color: #0A3871; /*color de la letra*/
+}
+
+/*RESPONSIVE PARA TABLET*/
+@media screen and (max-width:768px){
+    /*Estilos para el logo*/
+    .logo{
+        width: 20%;
+    }
+    /*Estilos para el body-main*/
+    main{
+        display:inline-block;
+        margin: 0 50px 10px 80px;
+    }
+    /*Estilos para la primera seccion del body-main*/
+    .seccion1{
+        margin: 0 0 100px;
+    }
+    /*Estilos para los botones Encriptar-Desencriptar*/
+    .botones{
+        justify-content: space-between;
+    }
+    .btn-encriptar{
+        width: 280px;
+    }
+    .btn-desencriptar{
+        width: 280px;
+    }
+    /*Estilos para el mensaje*/
+    .mensaje{
+        background:white;
+        width: 95%;
+        height: 340px;
+    }
+    .texto-mensaje{
+        display:inline-block;
+        background:white;
+        width: 560px;
+        height: 250px;
+        top: 680px;
+        margin: 0;
+        display: none;
+    }
+    /*Estilos para el texto encima del mensaje*/
+    #contenido{
+        display:inline-block;
+        width: 510px;
+        top: 700px; 
+        font-size: 40px; 
+        padding: 50px;
+    }
+    #contenido1{
+        display:inline-block;
+        width: 510px;
+        top: 880px; 
+        font-size: 20px;
+        padding: 0 50px;
+    }
+    /*Estilos para el boton Copiar*/
+    .btn-copiar{
+        display:inline-block;
+        width: 568px;
+        position: absolute;
+        top: 945px;
+        margin: 0 25px;
+        display: none;
+    }
+    /*Estilos para el pie de página*/
+    footer{ 
+        display:inline-block;
+        margin: 10px 50px 10px 80px;
+    }
+}
+
+/*RESPONSIVE PARA CELULAR*/
+@media screen and (max-width:480px){
+    /*Estilos para el logo*/
+    .logo{
+        width: 20%;
+    }
+    /*Estilos para el body-main*/
+    main{
+        display:inline-block;
+        margin: 0 50px 10px 50px;
+    }
+    /*Estilos para la primera seccion del body-main*/
+    .seccion1{
+        margin: 0 0 100px;
+    }
+    /*Estilos para el campo de texto*/
+    .text-area{
+        width: 380px;
+    }
+    /*Estilos para los botones Encriptar-Desencriptar*/
+    .botones{
+        display: block;
+    }
+    .btn-encriptar{ 
+        width: 380px;
+        margin-bottom: 15px;
+    }
+    .btn-desencriptar{
+        width: 380px;
+        margin-left: 0;
+    }
+    /*Estilos para el mensaje*/
+    .mensaje{
+        display:inline-block;
+        background: white;
+        width: 340px;
+        height: 340px;
+    }
+    .texto-mensaje{
+        display:inline-block;
+        background: white;
+        width: 340px;
+        height: 245px;
+        top: 765px;
+        display: none;
+    }
+    /*Estilos para el texto encima del mensaje*/
+    #contenido{
+        display:inline-block;
+        width: 390px;
+        height: 100px; 
+        top: 850px;
+        margin: center;
+        font-size: 40px; 
+        padding: 0;
+        margin: 0 0 0 -390px;
+    }
+    #contenido1{
+        display:inline-block;
+        width: 390px;
+        height: 40px; 
+        top: 970px;
+        margin: center;
+        font-size: 20px;
+        padding: 0;
+        margin: 0 0 0 -390px;
+    }
+    /*Estilos para el boton Copiar*/
+    .btn-copiar{
+        width: 350px;
+        position: absolute;
+        top: 1030px;
+        margin: 0 25px;
+        display: none;
+    }
+    /*Estilos para el pie de página*/
+    footer{
+        display:inline-block;
+        margin: 10px 50px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Encriptador de texto</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Link de la fuente de estilo Inter de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="Imagenes/Logo.png" alt="Logo de Alura">
+        </header>
+
+        <main>
+            <section class="seccion1">
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <h6 class="informacion"><img class="logo-informacion" src="Imagenes/Group.png" alt="icono de informacion"> Solo letras minusculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()"> Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+                
+            <section class="seccion2">
+                <textarea class="mensaje" cols="20" rows="10" readonly="readonly"></textarea>
+                <textarea class="texto-mensaje" cols="20" rows="10" readonly="readonly"></textarea>
+                <div id="contenido">Ningún mensaje fue encontrado</div>
+                <div id="contenido1">Ingresa el texto que deseas encriptar o desencriptar</div>
+                <div>
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Copyright Linda Melissa Casas Huanca - 2023</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
